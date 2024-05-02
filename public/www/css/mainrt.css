@@ -1,0 +1,33 @@
+.main-rt {
+}
+.main-rt-top {
+  width: 360px;
+  height: 560px;
+  background: pink;
+  margin-top: 30px;
+}
+
+.main-rt-top-donation {
+}
+.main-rt-top-review {
+}
+
+.main-rt-banner {
+  width: 360px;
+  height: 204px;
+  background: pink;
+  margin-top: 30px;
+}
+
+.main-rt-card {
+  width: 360px;
+  height: 387px;
+  background: pink;
+  margin-top: 30px;
+}
+.main-rt-news {
+  width: 360px;
+  height: 420px;
+  margin-top: 30px;
+  background: pink;
+}
