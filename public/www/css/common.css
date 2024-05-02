@@ -1,6 +1,9 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kakao:wght@400;200;700&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff2");
+@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff2");
+@import url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.woff2");
 * {
   margin: 0px;
   padding: 0px;
@@ -18,6 +21,8 @@ body {
 }
 
 .wrap {
+  position: relative;
+  padding-top: 70px;
 }
 .inner {
   width: calc(100% - 30px);
