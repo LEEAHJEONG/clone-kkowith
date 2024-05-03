@@ -1,3 +1,7 @@
+.main-left {
+  width: 700px;
+}
+
 .main-lt-list,
 .main-lt-donation-list div {
   width: 700px;
@@ -29,17 +33,18 @@
 /* 2번 */
 .most-list {
   display: flex;
-  width: 660px;
+  width: auto;
   height: 300px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   /* margin: -20px -10px; */
-  /* padding: 16px 0px 0px 0px; */
+  padding-top: 16px;
+  margin: -20px calc(-10px);
 }
 
 .most-item {
   width: 200px;
   height: 100%;
-  padding: 16px;
+  margin: 20px 10px;
   /* background-color: orange; */
 }
 
@@ -48,6 +53,10 @@
   width: 100%;
   height: 100%;
   /* background-color: yellow; */
+}
+
+.most-item img {
+  width: 100%;
 }
 
 .image {
