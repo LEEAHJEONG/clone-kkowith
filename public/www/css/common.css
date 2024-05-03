@@ -41,3 +41,16 @@ body {
   justify-content: space-between;
   margin: 0 auto;
 }
+
+.br-20 {
+  display: flex;
+  align-items: center;
+}
+
+.br-30 {
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 15px 0px;
+  background-color: #fff;
+  padding: 15px;
+}

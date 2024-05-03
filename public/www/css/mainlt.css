@@ -8,6 +8,9 @@
   background-color: rgb(255, 255, 255);
   padding: 24px 30px 32px;
 }
+.main-lt-list {
+  margin-top: 30px;
+}
 
 .main-lt-list h4 {
   font-size: 20px;
