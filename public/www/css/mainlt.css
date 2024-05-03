@@ -1,21 +1,24 @@
 .main-lt-list,
 .main-lt-donation-list div {
   width: 700px;
-  height: 250px;
+  height: auto;
   margin-bottom: 30px;
   border-radius: 12px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 15px 0px;
   background-color: rgb(255, 255, 255);
-  padding: 15px;
+  padding: 24px 30px 32px;
 }
 
-h4 {
+.main-lt-list h4 {
   font-size: 20px;
   font-weight: 600;
+  color: #202020;
 }
 
 .main-lt-list p {
-  color: #888888;
+  font-size: 15px;
+  color: #666666;
+  padding-top: 10px;
 }
 
 /* 1번 */
@@ -24,14 +27,48 @@ h4 {
 .most-list {
   display: flex;
   width: 660px;
+  height: 300px;
   justify-content: space-around;
-  margin: -20px -10px;
-  padding: 16px 0px 0px;
+  /* margin: -20px -10px; */
+  /* padding: 16px 0px 0px 0px; */
 }
 
-.most-list div {
-  width: 100%;
-  height: 10px;
+.most-item {
+  width: 200px;
+  height: 100%;
   padding: 16px;
-  background-color: aqua;
+  /* background-color: orange; */
+}
+
+.most-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellow; */
+}
+
+.image {
+  background-color: greenyellow;
+  width: 100%;
+  height: 140px;
+  border-radius: 8px;
+}
+
+.most-text {
+  padding: 12px 0 0 0;
+}
+
+.most-text strong {
+  font-size: 14px;
+  color: #202020;
+}
+
+.most-text span {
+  font-size: 12px;
+  color: #888888;
+  margin-top: 4px;
+}
+
+.most-text div {
+  margin-top: 20px;
 }
