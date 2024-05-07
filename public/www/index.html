@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./css/mainlt.css" />
     <link rel="stylesheet" href="./css/mainrt.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+
+    <script src="./js/header.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -21,14 +23,17 @@
         <div class="inner">
           <div class="header-logo br-20">
             <a href="#">
-              <img src="./images/logo_pc.svg" alt="" />
+              <img src="./images/logo_pc.svg" alt="같이가치로고" />
             </a>
           </div>
           <div class="header-nav br-20">
             <ul class="nav-list">
               <li><a href="#">홈</a></li>
               <li>
-                <a href="#">매달기부<span class="new-alarm"></span></a>
+                <a href="#"
+                  >매달기부
+                  <div class="new-alarm"></div
+                ></a>
               </li>
 
               <li><a href="#">같이기부</a></li>
@@ -451,7 +456,7 @@
           <!-- 메인 오른쪽 레이아웃 -->
           <!-- 담당자 : 이아정 -->
           <div class="main-rt">
-            <div class="main-rt-top br-30">
+            <div class="main-rt-top">
               <!-- 기부금 상황 -->
               <div class="main-rt-top-donation">
                 <a href="#" class="donation-title"
@@ -464,9 +469,24 @@
                     alt="기부금이미지"
                   />
                 </div>
+                <a href="#" class="donation-card">
+                  <img src="./images/ico_won.png" alt="원화아이콘" />
+                  <h2>총 기부금</h2>
+                  <span>74,258,277,455원</span>
+                </a>
               </div>
               <!-- 기부 후기 -->
-              <div class="main-rt-top-review"></div>
+              <div class="main-rt-top-review">
+                <h3>따뜻한 후기</h3>
+                <h2 class="review-title">아이들의 첫 번째 놀이동산</h2>
+                <p class="review-text">
+                  따뜻한 날에 따뜻한 마음 모아 이든지역아동센터 친구들이
+                  놀이동산에 다녀올 수 있었습니다. 운영비 없는 신규시설에서
+                  놀이동산에 갈 수 있다는 것은 따뜻한 손길이 있었기에 가능한
+                  일입니다. 먼저 아동 자치회를 열어 아이들은 팀을 만들고 버스에
+                  같이 앉을 짝꿍도 정하고 한
+                </p>
+              </div>
             </div>
             <!-- 모금 배너 -->
             <div class="main-rt-banner"></div>
