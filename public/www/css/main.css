@@ -1,5 +1,6 @@
 .main .inner {
   width: 1120px;
+  height: auto;
   margin-top: 30px;
   padding-bottom: 46px;
   justify-content: space-between;

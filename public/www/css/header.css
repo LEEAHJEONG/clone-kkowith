@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
@@ -7,17 +7,20 @@
   display: block;
   background: #fff;
   border-bottom: 1px solid #eee;
+  z-index: 99999;
 }
 .header .inner {
-  height: 100%;
 }
 
+.header-logo {
+  width: 115px;
+  height: 70px;
+}
 .header-nav {
-  height: 100%;
 }
 
-.header-nav li a {
-  display: inline-flex;
+.header-nav a {
+  display: flex;
   font-size: 16px;
   font-weight: 700;
   position: relative;
@@ -25,6 +28,16 @@
   align-items: center;
   height: 100%;
   padding: 0 14px;
+  color: #444;
+}
+.header-nav .nav-list li a.underline:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 .nav-list {
   display: flex;
@@ -32,7 +45,6 @@
   height: 100%;
 }
 .nav-list li {
-  /* padding: 15px; */
   height: 100%;
 }
 .new-alarm {
@@ -46,7 +58,7 @@
 }
 
 .header-icon-list {
-  gap: 20px;
+  gap: 25px;
 }
 
 .icon-profile img {
