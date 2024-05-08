@@ -11,9 +11,6 @@
   background-color: rgb(255, 255, 255);
   padding: 24px 30px 32px;
 }
-.main-lt-list {
-  /* margin-top: 30px; */
-}
 
 .main-lt-list h4 {
   font-size: 20px;
@@ -66,15 +63,11 @@
   height: 100%;
 }
 
-.card-item img {
-  width: 100%;
-}
-
-.image {
-  background-color: greenyellow;
+.card-image img {
   width: 100%;
   height: 140px;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .card-content {
@@ -143,12 +136,6 @@
   gap: 6px;
 }
 
-.tag-list .tag-black {
-  background-color: rgb(32, 32, 32);
-  color: #fff;
-  font-weight: 600;
-}
-
 .tag-list button {
   height: 37px;
   padding: 7px 14px;
@@ -157,10 +144,49 @@
   border: 1px solid rgb(238, 238, 238);
 }
 
+.tag-list button:first-child {
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+  font-weight: 600;
+}
+
 /* 5번 슬라이드 */
 
 .lt-slide {
   background-color: #000;
+  padding: 0;
+}
+
+.lt-slide .list-content strong {
+  color: #fff;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: pre-wrap;
+
+  text-align: left;
+  user-select: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lt-slide button {
+  background: none;
+}
+
+.lt-slide .list-content em {
+  margin-top: 15px;
+  color: rgb(187, 107, 255);
+  font-size: 13px;
+  letter-spacing: -0.3px;
+  align-self: flex-start;
+  height: 30px;
+  padding: 0px 12px;
+  border-radius: 0px;
+  border: 1px solid rgba(187, 107, 255, 0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* 6번 리스트 */
@@ -182,16 +208,17 @@
   top: 0;
   left: 0;
   border-radius: 12px 0 0 12px;
+  object-fit: cover;
 }
 
-.main-lt-list-content {
+.list-content {
   padding: 0px 30px;
   margin-top: -8px;
   display: flex;
   flex-direction: column;
 }
 
-.main-lt-list-content button {
+.list-content button {
   border: 0px;
   color: #999;
   font-size: 13px;
@@ -207,11 +234,11 @@
   font-weight: 600;
 }
 
-.main-lt-list-content span:first-child {
+.list-content span:first-child {
   margin-right: 2px;
 }
 
-.main-lt-list-content strong {
+.list-content strong {
   font-size: 20px;
   color: #202020;
   padding-top: 3px;
@@ -223,7 +250,7 @@
   font-weight: 600;
 }
 
-.main-lt-list-content .list-subtxt {
+.list-content .list-subtxt {
   font-size: 14px;
   color: #888;
   margin-top: 11px;
@@ -246,7 +273,20 @@
   height: 4px;
 }
 
-.main-lt-list-content .progress-info span {
+.list-content .progress-info span {
   font-size: 14px;
   line-height: 1.57;
+}
+
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .main-lt-list {
+    width: 80%;
+    height: 92.44vw;
+    max-height: 710px;
+  }
+
+  .inner {
+    margin: 0 auto;
+  }
 }
