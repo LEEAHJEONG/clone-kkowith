@@ -34,6 +34,16 @@
   font-family: "Noto Sans KR";
 }
 
+/* 0번 */
+.main-lt-clickcard img {
+  padding: 0;
+  width: 700px;
+  height: auto;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 15px 0px;
+}
+
 /* 1번 & 3번 */
 
 /* 2번 & 4번*/
@@ -288,5 +298,10 @@
 
   .inner {
     margin: 0 auto;
+  }
+
+  /* 0번 */
+  .main-lt-clickcard img {
+    content: url(../images/firstcard-mobile.jpg);
   }
 }
