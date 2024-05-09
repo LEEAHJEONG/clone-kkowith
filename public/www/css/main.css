@@ -6,3 +6,10 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .main .inner {
+    display: block;
+  }
+}
