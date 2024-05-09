@@ -24,13 +24,14 @@ body {
   font-style: normal;
   font-weight: 400;
   font-optical-sizing: auto;
+  background-color: #f7f7f7;
 }
 
 .wrap {
-  background-color: #f7f7f7;
-  min-width: 1140px;
-  /* position: relative;
-  padding-top: 70px; */
+  width: 1140px;
+  position: relative;
+  padding-top: 70px;
+  margin: 0 auto;
 }
 @media all and (max-width: 768px) {
   body {
