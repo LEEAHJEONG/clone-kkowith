@@ -1,9 +1,10 @@
 .main-left {
-  width: 700px;
+  max-width : 700px;
+
 }
 
 .main-lt-list {
-  width: 700px;
+  width: 100%;
   height: auto;
   margin-bottom: 30px;
   border-radius: 12px;
@@ -37,7 +38,7 @@
 /* 0번 */
 .main-lt-clickcard img {
   padding: 0;
-  width: 700px;
+  width: 100%;
   height: auto;
   margin-bottom: 30px;
   border-radius: 12px;
@@ -45,6 +46,61 @@
 }
 
 /* 1번 & 3번 */
+.card-single-item {
+  display: flex;
+  margin-top: 20px;
+}
+
+.card-single .card-image img{
+  width: 280px;
+  height: 170px;
+}
+
+.card-single .card-content {
+  margin-left: 30px;
+  width: 350px;
+  padding: 0;
+}
+
+.card-single .card-content strong {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-single .progress-info span {
+  font-size: 14px;
+  color: #000;
+}
+
+.card-single .progress-info-detail {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-single .progress-info-detail span{
+font-size: 12px;
+color: rgb(32, 32, 32);
+line-height: 1.67;
+}
+
+.card-single .progress-info-detail span:first-child {
+  color: rgb(255, 64, 80);
+}
+
+.card-single .progress-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-btn button {
+  width: 160px;
+  height: 42px;
+  border-radius: 7px;
+  border: 2px solid #d9d9d9;
+}
+
 
 /* 2번 & 4번*/
 .card-list {
@@ -169,20 +225,24 @@
 
 .lt-slide .list-content strong {
   color: #fff;
-  display: -webkit-box;
+  /* display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   white-space: pre-wrap;
-
   text-align: left;
   user-select: auto;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
+  width: 200px;
+  word-break: keep-all;
 }
 
-.lt-slide button {
+.lt-slide .list-content button {
   background: none;
-}
+  color: rgb(136, 136, 136);
+  font-weight: 400;
+  font-size: 12px;
+  }
 
 .lt-slide .list-content em {
   margin-top: 15px;
@@ -199,6 +259,9 @@
   justify-content: center;
 }
 
+.lt-slide .list-content em svg {
+  margin-right: 5px;
+}
 /* 6번 리스트 */
 
 .main-lt-donation-list .main-lt-list {
@@ -290,10 +353,12 @@
 
 /* 반응형 */
 @media all and (max-width: 768px) {
+  .main-left{
+    width: 100%;
+    max-width: 100%;
+  }
   .main-lt-list {
-    width: 80%;
-    height: 92.44vw;
-    max-height: 710px;
+
   }
 
   .inner {
@@ -301,7 +366,13 @@
   }
 
   /* 0번 */
+  .main-lt-clickcard {
+  }
   .main-lt-clickcard img {
     content: url(../images/firstcard-mobile.jpg);
+    height : 94.80vw;
+    max-height : 730px;
+    width: auto;
+    max-width: 100%;
   }
 }
