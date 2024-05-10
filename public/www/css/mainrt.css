@@ -2,7 +2,7 @@
   width: 360px;
 }
 .main-rt-top {
-  /* width: 100%; */
+  width: 100%;
   height: auto;
   margin-bottom: 30px;
   border-radius: 12px;
@@ -72,7 +72,15 @@
   border-radius: 0px 0px 12px 12px;
   padding: 31px 26px 46px;
 }
-.riview-wrap h3 {
+.main-rt-top-review {
+  width: 100%;
+  height: 281px;
+  background: #fff;
+  border-radius: 0px 0px 12px 12px;
+  padding: 31px 26px 46px;
+}
+.review-head {
+  display: inline-block;
   color: #888;
   font-size: 13px;
   font-weight: 600;
@@ -93,15 +101,45 @@
 }
 
 .main-rt-banner {
-  /* width: 360px; */
+  position: relative;
+  width: 100%;
   height: 204px;
   margin-top: 30px;
   border-radius: 12px;
-  background: #ffd9dd;
+  background: #fff5cc;
+}
+.banner-url {
+  display: flex;
+  width: 100%;
+  height: 204px;
+  padding: 35px 26px;
+}
+.banner-txt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #661a20;
+  padding-bottom: 10px;
+  line-height: 1.5;
+}
+.banner-txt span {
+  font-size: 14px;
+  /* 색상 추후 수정 필요 */
+  color: #9e5b60;
 }
 
+.banner-img {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+}
+.banner-img img {
+  width: 110px;
+  height: 110px;
+}
+
+/* 설문조사 */
 .main-rt-card {
-  /* width: 360px; */
+  width: 100%;
   height: 387px;
   padding: 30px 26px;
 }
@@ -119,7 +157,7 @@
 .rt-card-list {
   display: flex;
   height: 60px;
-  background: #eeeeee;
+  background: #f5f5f4;
   border-radius: 6px;
 
   align-items: center;
@@ -146,11 +184,60 @@
   line-height: 1.48;
 }
 
+/* 소식정보 */
+
+/* a 범위 재설정 필요 */
 .main-rt-news {
   width: 360px;
   height: 420px;
+  padding: 30px 26px;
+}
+.main-rt-news h2 {
+  font-size: 20px;
+  line-height: 1.61;
+  font-weight: 600;
+  color: #202020;
+  margin-bottom: 19px;
+}
+.news-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -2px;
+}
+.news-item-list-g {
+  width: 152px;
+  height: 152px;
+  padding: 15px 12px 12px;
+  border-radius: 4px;
+  background: #aaa6a2;
+  position: relative;
+  margin: 2px;
+}
+.news-item-list-y {
+  width: 152px;
+  height: 152px;
+  padding: 15px 12px 12px;
+  border-radius: 4px;
+  background: #ffc92d;
+  position: relative;
+  margin: 2px;
+}
 
-  /* background: #aaa6a2, #ffc92d; */
+.news-item-list h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.61;
+
+  letter-spacing: -1px;
+}
+
+.news-item-list img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 12px;
+  bottom: 12px;
 }
 
 @media all and (max-width: 768px) {
