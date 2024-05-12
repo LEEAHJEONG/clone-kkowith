@@ -11,12 +11,14 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  outline-style: none;
 }
 a {
   color: #000;
   text-decoration: none;
 }
 html {
+  overflow-x: hidden;
 }
 
 body {
@@ -28,14 +30,13 @@ body {
 }
 
 .wrap {
-  width: 1140px;
+  /* width: 1140px; */
   position: relative;
   padding-top: 70px;
   margin: 0 auto;
 }
 @media all and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+  .inner {
   }
 }
 
