@@ -1,5 +1,6 @@
 .main-rt {
-  width: 360px;
+  width: 32.14%;
+  max-width: 360px;
 }
 .main-rt-top {
   width: 100%;
@@ -242,8 +243,8 @@
 
 @media all and (max-width: 768px) {
   .main-rt {
-    /* width: 100%; */
-    /* max-width: 100%; */
+    width: 100%;
+    max-width: 100%;
   }
   .main-rt-top {
     /* 360/1120*100 */
