@@ -1,0 +1,60 @@
+.footer {
+  height: 180px;
+  padding: 40px 0px 45px;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid rgb(238, 238, 238);
+  box-sizing: border-box;
+  background-color: rgb(247, 247, 247);
+}
+
+.footer .inner {
+  width: 1120px;
+  margin: 0px auto;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.footer-sitemap {
+  display: flex;
+  align-items: center;
+}
+
+.footer-sitemap span {
+  color: rgb(68, 68, 68);
+  font-size: 14px;
+  overflow-wrap: break-word;
+  line-height: 1.57;
+  letter-spacing: -0.1px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 0px;
+  cursor: pointer;
+}
+
+.footer-logo img {
+  width: 115px;
+  height: 18px;
+}
+
+.footer-sns span {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  color: transparent;
+}
+
+.footer-sns .icon-kakao {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+  background: url(//t1.kakaocdn.net/together_image/svg/footer_kakaotalk_gray80.svg)
+    center center / contain no-repeat;
+}

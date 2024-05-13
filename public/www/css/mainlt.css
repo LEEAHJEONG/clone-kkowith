@@ -682,6 +682,9 @@
     max-width: 100%;
   }
   .main-lt-list {
+    /* width: 80%; */
+    /* height: 92.44vw; */
+    /* max-height: 710px; */
   }
 
   .inner {
