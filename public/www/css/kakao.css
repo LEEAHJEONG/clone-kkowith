@@ -1,26 +1,20 @@
 @font-face {
-  font-family: "Kakao";
+  font-family: "KakaoBig regular";
   font-style: normal;
-  font-weight: 400;
-  src: local("Kakao Regular"), local("KakaoOTF Regular"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.eot") format("eot"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-bRg.otf") format("opentype");
+  font-weight: normal;
+  font-display: swap;
+  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-regular.woff)
+      format("woff");
 }
-
 @font-face {
-  font-family: "Kakao";
+  font-family: "KakaoBig Bold";
   font-style: normal;
-  font-weight: 200;
-  src: local("Kakao Light"), local("KakaoOTF Light"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.eot") format("eot"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-aLt.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "Kakao";
-  font-style: normal;
-  font-weight: 700;
-  src: local("Kakao Bold"), local("KakaoOTF Bold"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.eot") format("eot"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.woff2") format("woff2"), url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/kakao/kakao.github.io/assets/fonts/KakaoOTF-cBd.otf") format("opentype");
+  font-weight: bold;
+  font-display: swap;
+  src: url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff2)
+      format("woff2"),
+    url(https://t1.kakaocdn.net/together_image/fonts/kakao-big-bold.woff)
+      format("woff");
 }
