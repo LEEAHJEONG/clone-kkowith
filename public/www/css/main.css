@@ -7,11 +7,17 @@
   justify-content: space-between;
   /* 추후변경 */
   /* padding: 0px 10px 10px; */
+  padding-left: 10px;
 }
 
 /* 반응형 */
 @media all and (max-width: 768px) {
   .main .inner {
     display: block;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 20px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 }
