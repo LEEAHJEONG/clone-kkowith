@@ -83,13 +83,13 @@
           <!-- 메인 왼쪽 레이아웃 -->
           <!-- 담당자 : 김민지 -->
           <div class="main-left">
-            <!-- 클릭 응원 -->
+            <!-- 0번: 클릭 응원 -->
             <div class="main-lt-clickcard">
               <a href="https://together.kakao.com/tags/688?phase=2">
                 <img src="./images/firstcard.jpg" alt="카카오 같이가치" />
               </a>
             </div>
-            <!-- 마지막 기부자 모금함 -->
+            <!-- 1번: 마지막 기부자 모금함 -->
             <div class="main-lt-list">
               <h4>마지막 기부자를 찾습니다 👀</h4>
               <p>목표 달성까지 얼마 남지 않았어요!</p>
@@ -171,12 +171,15 @@
               </div>
             </div>
 
-            <!-- 베스트 모금함 -->
+            <!-- 2번: 베스트 모금함 -->
             <div class="main-lt-list">
               <h4>
                 <a href="#"><span>가장 많이 기부 중인 모금함</span></a>
               </h4>
-              <p>오늘, 기부 하셨나요? 당신의 마음도 함께 나눠주세요!</p>
+              <p>
+                오늘, 기부 하셨나요? <br class="brtag" />당신의 마음도 함께
+                나눠주세요!
+              </p>
               <ul class="card-list">
                 <li class="card-item">
                   <a href="#">
@@ -199,11 +202,15 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">1,647,940원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">1,647,940원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
-                      <em type="rect" class="end-tag">종료임박</em>
+                      <!-- <em type="rect" class="end-tag">종료임박</em> -->
                     </div>
                   </a>
                 </li>
@@ -226,8 +233,12 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">1,647,940원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">1,647,940원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -252,8 +263,12 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">3,238,797원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">3,238,797원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -262,64 +277,64 @@
               </ul>
             </div>
 
-            <!-- 종료임박 모금함 -->
+            <!-- 3번: 종료임박 모금함 -->
             <div class="main-lt-list">
-              <h4 style="line-height: 1.67; letter-spacing: -0.1px">
-                시간이 얼마 남지 않았어요!
-              </h4>
-              <p>망설이면 끝! 조금만 더 힘을 보태주세요.</p>
-              <div class="img-title">
-                <div class="img-title-time">
-                  <div class="title-clock">
-                    <span class="title-clock-min"></span>
-                    <span class="title-clock-hour"></span>
+              <div class="time-slide">
+                <div class="img-title">
+                  <div class="img-title-time">
+                    <div class="title-clock">
+                      <span class="title-clock-min"></span>
+                      <span class="title-clock-hour"></span>
+                    </div>
+                    <em class="title-time" id="title-time">00:00:00</em>
                   </div>
-                  <em class="title-time">10:36:20</em>
                 </div>
-              </div>
-              <div class="card-single">
-                <div class="card-single-item">
-                  <a href="#">
-                    <div class="card-image">
-                      <img
-                        src="./images/c1400x960 (4).jpg"
-                        alt="카카오 같이가치"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <strong
-                        >자립준비청년 우현이, 사회 첫걸음에 날개를
-                        달아주세요!</strong
-                      >
-                      <div class="progress-container">
-                        <div class="progress-bar">
-                          <div role="progressbar" class="current-bar"></div>
-                        </div>
-                        <div class="progress-info">
-                          <div class="progress-info-title">
-                            <span>1,647,940원</span>
-                            <span>6,000,000원 목표</span>
-                          </div>
-                          <div class="progress-info-sub">
-                            <span>97% 달성</span>
-                            <em>4일 남음</em>
-                          </div>
-                        </div>
+                <h4>시간이 얼마 남지 않았어요!</h4>
+                <p>망설이면 끝! 조금만 더 힘을 보태주세요.</p>
+                <div class="card-single">
+                  <div class="card-single-item">
+                    <a href="#">
+                      <div class="card-image">
+                        <!-- <img
+                          src="./images/c1400x960 (4).jpg"
+                          alt="카카오 같이가치"
+                        /> -->
                       </div>
-                      <em type="rect" class="end-tag">종료임박</em>
-                    </div>
-                  </a>
+                      <div class="card-content">
+                        <strong
+                          >될 때까지 ‘검찰개혁’⚡️검찰보고서로 함께
+                          만들어요</strong
+                        >
+                        <div class="progress-container">
+                          <div class="progress-bar">
+                            <div role="progressbar" class="current-bar"></div>
+                          </div>
+                          <div class="progress-info">
+                            <div class="progress-info-title">
+                              <span>1,647,940원</span>
+                              <span>6,000,000원 목표</span>
+                            </div>
+                            <div class="progress-info-sub">
+                              <span>97% 달성</span>
+                              <em>4일 남음</em>
+                            </div>
+                          </div>
+                        </div>
+                        <em type="rect" class="end-tag">종료임박</em>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="progress-btn">
-                <button type="button">
-                  <i class="icon-heart"></i>하트응원
-                </button>
-                <button type="button">기부하기</button>
+                <div class="progress-btn">
+                  <button type="button">
+                    <i class="icon-heart"></i>하트응원
+                  </button>
+                  <button type="button">기부하기</button>
+                </div>
               </div>
             </div>
 
-            <!-- 태그 모금함 -->
+            <!-- 4번: 태그 모금함 -->
             <div class="main-lt-list">
               <h4>
                 <a href="#"><span>태그로 보는 모금함</span></a>
@@ -361,8 +376,12 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">527,898원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">527,898원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -387,8 +406,12 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">357,151원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">357,151원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -412,8 +435,12 @@
                           <div role="progressbar" class="current-bar"></div>
                         </div>
                         <div class="progress-info">
-                          <span class="txt-num">657,498원</span>
-                          <span class="txt-per">39%</span>
+                          <div>
+                            <span class="txt-num">657,498원</span>
+                          </div>
+                          <div>
+                            <span class="txt-per">39%</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -422,7 +449,7 @@
               </ul>
             </div>
 
-            <!-- 슬라이드 -->
+            <!-- 5번: 슬라이드 -->
             <div class="main-lt-list lt-slide">
               <div class="swiper leftslide">
                 <div class="swiper-wrapper">
@@ -434,7 +461,7 @@
               </div>
             </div>
 
-            <!-- 기부 리스트 -->
+            <!-- 6번: 기부 리스트 -->
             <div class="main-lt-donation-list">
               <div class="main-lt-list">
                 <a
@@ -854,4 +881,25 @@
       </footer>
     </div>
   </body>
+  <script>
+    function updateTimer() {
+      const future = Date.parse("2024/01/01 00:00:00");
+      const now = new Date();
+      const diff = future - now;
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const mins = Math.floor(diff / (1000 * 60));
+      const secs = Math.floor(diff / 1000);
+
+      const d = days;
+      const h = String(hours - days * 24).padStart(2, "0");
+      const m = String(mins - hours * 60).padStart(2, "0");
+      const s = String(secs - mins * 60).padStart(2, "0");
+
+      document.getElementById("title-time").innerText = `${h}:${m}:${s}`;
+    }
+
+    setInterval(updateTimer, 1000);
+  </script>
 </html>
