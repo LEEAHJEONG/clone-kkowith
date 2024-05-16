@@ -25,7 +25,7 @@
 
 .main-lt-list p {
   font-size: 15px;
-  color: #666666;
+  color: rgb(102, 102, 102);
   padding-top: 4px;
   line-height: 1.6;
   letter-spacing: -0.1px;
@@ -287,7 +287,7 @@
   margin-left: 3px;
 }
 
-/* 3번 이미지 태그 */
+/* 3번만 */
 
 .img-title {
   position: absolute;
@@ -382,6 +382,17 @@
   line-height: 1;
 }
 
+.time-slide h4 {
+  line-height: 1.67;
+  letter-spacing: -0.1px;
+}
+
+/* 2번만 */
+
+.brtag {
+  display: none;
+}
+
 /* 2번 & 4번*/
 .card-list {
   display: flex;
@@ -423,7 +434,7 @@
 
 .card-content strong {
   font-size: 14px;
-  color: #202020;
+  color: rgb(32, 32, 32);
   letter-spacing: -0.1px;
   line-height: 20px;
 }
@@ -644,7 +655,6 @@
 
 .list-content strong {
   font-size: 20px;
-  color: #202020;
   padding-top: 3px;
   overflow-wrap: break-word;
   word-break: keep-all;
@@ -699,7 +709,7 @@
     margin: 0 auto;
   }
 
-  /* 0번 */
+  /* 반응형 0번 */
   .main-lt-clickcard {
   }
   .main-lt-clickcard img {
@@ -710,13 +720,19 @@
     max-width: 100%;
   }
 
-  /* 1번 */
+  /* 반응형 1번 */
   .card-single {
     margin: calc(-10px) 0px;
     padding-top: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
   }
+
   .card-single-item {
-    height: 100%;
+    height: auto;
+    margin: calc(10px) 0px;
   }
   .card-single-item a {
     flex-direction: column;
@@ -735,6 +751,15 @@
 
   .card-single .card-image {
     width: 100%;
+    height: 0px;
+    padding-bottom: 50.85%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background: url("https://mud-kage.kakaocdn.net/dn/b29Ni0/btsGINM9yD8/tozuDEDTOJKduGWj22YXOk/img.png")
+        50% 50% / cover no-repeat,
+      url("https://t1.kakaocdn.net/together_image/common/no_image.png");
   }
 
   .img-title-money {
@@ -760,5 +785,140 @@
 
   .card-single .progress-container .progress-bar {
     height: 6px;
+  }
+
+  /* 반응형 2번 */
+  .brtag {
+    display: block;
+  }
+
+  .card-list {
+    width: 100%;
+    margin: calc(-9px) 0px;
+  }
+
+  .card-item {
+    width: 100%;
+    height: auto;
+    margin: calc(9px) 0px;
+  }
+
+  .card-item a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-list .card-image {
+    width: 124px;
+    height: 86px;
+    padding-bottom: 0px;
+  }
+
+  .card-list .card-image img {
+    height: 100%;
+  }
+
+  .card-list .card-content {
+    flex: 1 1 0%;
+    overflow: hidden;
+    position: static;
+    height: 86px;
+    padding: 0px 0px 0px 16px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-list .card-content strong {
+    margin-top: -3px;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 1.43;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+  }
+
+  .card-list .card-content span {
+    width: 100%;
+    margin-top: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .card-list .progress-container {
+    margin-top: auto;
+    margin-bottom: -3px;
+  }
+  .card-list .progress-container .progress-bar {
+    display: flex;
+    height: 2px;
+  }
+
+  /* 반응형 3번 */
+  .img-title {
+    display: flex;
+    justify-content: center;
+    position: static;
+  }
+
+  .img-title-time {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0px 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    width: auto;
+    border-radius: 0;
+    height: 100%;
+  }
+
+  .img-title-time em {
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    font-style: normal;
+    font-family: "KakaoBig Bold";
+    overflow-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.3px;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .time-slide h4 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .time-slide p {
+    padding-top: 1px;
+    text-align: center;
+  }
+
+  .time-slide .card-single {
+    padding-top: 12px;
+  }
+
+  .time-slide .card-image {
+    background: url("https://mud-kage.kakaocdn.net/dn/blhELO/btsE3qE9ifU/EqrKicguTEmlMKDbZQxTZk/c1400x960.jpg")
+        50% 50% / cover no-repeat,
+      url("https://t1.kakaocdn.net/together_image/common/no_image.png");
+  }
+
+  .card-single .card-content strong {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* 6번 */
+  .main-lt-donation-list .main-lt-list-inner {
+    flex-direction: column;
   }
 }
