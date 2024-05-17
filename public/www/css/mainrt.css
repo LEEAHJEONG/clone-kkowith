@@ -183,58 +183,54 @@
 
 /* 소식정보 */
 
-/* a 범위 재설정 필요 */
 .main-rt-news {
   width: 100%;
+  /* height: 37.5vw;
+  max-height: 420px; */
   padding: 30px 26px;
 }
 .main-rt-news h2 {
   font-size: 20px;
   font-family: "KakaoBig Bold";
   line-height: 1.61;
-
   color: #202020;
   margin-bottom: 19px;
 }
 .news-item {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 2px; */
-  margin: -2px;
-
-  height: 27.67vw;
-  max-height: 310px;
+  justify-content: space-between;
+  height: 26.78vw;
+  max-height: 300px;
+  gap: 0.5%;
 }
 
 .news-item-list-g,
 .news-item-list-y {
-  /* height: auto; */
-  width: 50%;
-  height: 50%;
-  /* width: 152px;
-  height: 152px; */
+  width: 49.5%;
+  height: 49.5%;
   padding: 15px 12px 12px;
   border-radius: 4px;
-  position: relative;
-  /* margin: 1px; */
   display: flex;
+  position: relative;
+
+  background: #aaa6a2;
 }
+
 .news-item-list-g {
   background: #aaa6a2;
 }
 .news-item-list-y {
   background: #ffc92d;
 }
-.news-item-list-g h3,
-.news-item-list-y h3 {
+.news-item-txt {
   font-size: 15px;
   font-family: "KakaoBig Bold";
   color: #fff;
   line-height: 1.61;
 }
 
-.news-item-list-g img,
-.news-item-list-y img {
+.news-item-img {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -247,7 +243,6 @@
     width: 100%;
     max-width: 100%;
   }
-
   .main-rt-top {
   }
   .main-rt-banner,
@@ -260,19 +255,13 @@
     max-height: 380px;
   }
   .main-rt-news {
-    height: 102.86vw;
-    max-height: 790px;
+    /* height: 103.25vw;
+    max-height: 790px; */
   }
   .news-item {
-    height: 89.84vw;
-    max-height: 690px;
-  }
-
-  .news-item-list-g,
-  .news-item-list-y {
-    /* width: 44.27vw;
-    max-width: 340px; */
-    height: 44.27vw;
-    max-height: 340px;
+    height: 88.54vw;
+    max-height: 680px;
+    /* height: 89.84vw;
+    max-height: 690px; */
   }
 }
