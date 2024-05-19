@@ -7,29 +7,29 @@
   display: block;
   background: #fff;
   border-bottom: 1px solid #eee;
-  z-index: 99999;
+  z-index: 9999;
 }
 .header .inner {
+  width: 100%;
   height: 70px;
+  padding: 0 10px;
+  white-space: nowrap;
 }
 .header-logo img {
   width: 115px;
   height: 70px;
 }
-.header-nav {
-  white-space: nowrap;
-}
-
 .nav-list {
   display: flex;
   justify-content: space-between;
   gap: 20px;
   height: 100%;
+  /* 추후수정 */
   transition: all 0.5s ease-in;
 }
 .nav-list li {
-  height: 100%;
   position: relative;
+  height: 100%;
 }
 .nav-list a {
   display: flex;
@@ -37,6 +37,7 @@
   font-family: "KakaoBig Bold";
   align-items: center;
   padding: 0 14px;
+  width: 100%;
   height: 100%;
   color: #444;
 }
@@ -49,11 +50,9 @@
   top: 24px;
   right: 6px;
 }
-
 .header-icon-list {
   gap: 25px;
 }
-
 .icon-profile img {
   border-radius: 10px;
   width: 25px;
@@ -67,24 +66,24 @@
   width: 23px;
   height: 23px;
 }
-.header-nav .nav-list li a.underline {
-  font-weight: 600;
-  color: #000;
-}
-
-.header-nav .nav-list li a.underline:before {
+/* 스크롤 효과 */
+.nav-list li a.underline:before {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #000;
+  border-bottom: 2px solid #393964;
 }
-.header-nav .nav-list li a.underline:active,
-.header-nav .nav-list li a.underline:focus {
+.nav-list li a.underline,
+.nav-list li a.underline:active,
+.nav-list li a.underline:focus {
   color: #000;
+  font-family: "KakaoBig Bold";
 }
+
+/* 반응형 */
 @media all and (max-width: 860px) {
   .nav-list {
     gap: 7px;
@@ -95,18 +94,15 @@
     gap: 0px;
   }
 }
-
 @media all and (max-width: 768px) {
   .header {
     height: 92px;
   }
-
   .header .inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0 20px;
   }
   .header-logo {
@@ -123,10 +119,10 @@
   .header-nav {
     width: 100%;
     height: 37px;
+    transition: height 0.2s ease-in;
   }
-
   .nav-list a {
-    padding: 5px 4px 9px;
+    padding: 0 4px;
     font-size: 14px;
     font-family: "KakaoBig regular";
     color: #202020;
@@ -135,7 +131,6 @@
     top: 5px;
     right: 0px;
   }
-
   .header-icon-list {
     display: flex;
     justify-content: center;
@@ -156,7 +151,6 @@
     width: 20px;
     height: 20px;
   }
-
   .icon-login {
     position: absolute;
     top: 0;
@@ -169,35 +163,59 @@
     width: 18px;
     height: 18px;
   }
+  /* 스크롤 효과 */
   .scroll,
-  .scroll .inner,
-  .scroll .header-nav {
+  .nav-scroll {
     height: 50px;
-    transition: height 0.2s ease;
   }
   .scroll .header-logo,
   .scroll .header-icon {
     display: none;
   }
   .scroll .new-alarm {
-    top: 10px;
+    top: 12px;
   }
-  .scroll .header-nav .nav-list li a.underline:before {
-    height: 1px;
-  }
+}
 
-  .header-nav .nav-list li a.underline:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-  }
-  .header-nav .nav-list li a.underline:active,
-  .header-nav .nav-list li a.underline:focus {
-    color: #000;
-    font-family: "KakaoBig Bold";
-  }
+/* 메뉴 오픈 */
+
+.header-open {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.header-open-menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999999;
+  width: 300px;
+  height: 100%;
+  padding: 30px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+  transition: transform 0.3s ease-in;
+}
+.header-open-login {
+  margin-bottom: 20px;
+}
+.header-open-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+.header-open-nav {
+  padding-top: 28px;
 }
