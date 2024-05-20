@@ -19,7 +19,6 @@ window.addEventListener("load", function () {
 });
 
 // 메뉴 클릭 시 언더바
-// 메뉴 클릭 시 언더바
 window.addEventListener("load", function () {
   const navLinks = document.querySelectorAll(".header-nav .nav-list li a");
 
