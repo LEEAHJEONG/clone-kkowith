@@ -22,7 +22,9 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 외부 js 파일 방식으로 진행 -->
     <script src="./js/header.js"></script>
-    <script src="./js/leftslide.js"></script>
+    <script src="./js/ltslide.js"></script>
+    <script src="./js/ltlist.js"></script>
+    <script src="./js/ltmost.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -206,100 +208,8 @@
                 오늘, 기부 하셨나요? <br class="brtag" />당신의 마음도 함께
                 나눠주세요!
               </p>
-              <ul class="card-list">
-                <li class="card-item">
-                  <a href="#">
-                    <div class="card-image">
-                      <img
-                        src="./images/c1400x960 (5).jpg"
-                        alt="카카오 같이가치"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <strong
-                        >성년의 날, 자립준비청년의 빛나는 내일을
-                        응원합니다!</strong
-                      >
-                      <span class="card-subtxt"
-                        >지파운데이션 사회적협동조합</span
-                      >
-                      <div class="progress-container">
-                        <div class="progress-bar">
-                          <div role="progressbar" class="current-bar"></div>
-                        </div>
-                        <div class="progress-info">
-                          <div>
-                            <span class="txt-num">1,647,940원</span>
-                          </div>
-                          <div>
-                            <span class="txt-per">39%</span>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- <em type="rect" class="end-tag">종료임박</em> -->
-                    </div>
-                  </a>
-                </li>
-                <li class="card-item">
-                  <a href="#">
-                    <div class="card-image">
-                      <img
-                        src="./images/c1400x960 (5).jpg"
-                        alt="카카오 같이가치"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <strong
-                        >여성 발달장애인 ‘드림걸스’의 꿈을 응원해
-                        주세요!</strong
-                      >
-                      <span class="card-subtxt">양평군 장애인복지관</span>
-                      <div class="progress-container">
-                        <div class="progress-bar">
-                          <div role="progressbar" class="current-bar"></div>
-                        </div>
-                        <div class="progress-info">
-                          <div>
-                            <span class="txt-num">1,647,940원</span>
-                          </div>
-                          <div>
-                            <span class="txt-per">39%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="card-item">
-                  <a href="#">
-                    <div class="card-image">
-                      <img
-                        src="./images/c1400x960 (5).jpg"
-                        alt="카카오 같이가치"
-                      />
-                    </div>
-                    <div class="card-content">
-                      <strong
-                        >살아남기 위하여 고향을 떠나는 아이티 주민들을
-                        도와주세요</strong
-                      >
-                      <span class="card-subtxt">사회복지법인 월드비전</span>
-                      <div class="progress-container">
-                        <div class="progress-bar">
-                          <div role="progressbar" class="current-bar"></div>
-                        </div>
-                        <div class="progress-info">
-                          <div>
-                            <span class="txt-num">3,238,797원</span>
-                          </div>
-                          <div>
-                            <span class="txt-per">39%</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </li>
+              <ul class="card-list" id="ltmost">
+                <!-- 외부 데이터 연동 -->
               </ul>
             </div>
 
@@ -321,10 +231,10 @@
                   <div class="card-single-item">
                     <a href="#">
                       <div class="card-image">
-                        <!-- <img
+                        <img
                           src="./images/c1400x960 (4).jpg"
                           alt="카카오 같이가치"
-                        /> -->
+                        />
                       </div>
                       <div class="card-content">
                         <strong
@@ -488,196 +398,8 @@
             </div>
 
             <!-- 6번: 기부 리스트 -->
-            <div class="main-lt-donation-list">
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (1).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="건강한삶">
-                      <span class="hashtag">#</span>
-                      <span>건강한삶</span>
-                    </button>
-                    <strong>배고픔 없는 보통의 삶</strong>
-                    <span class="list-subtxt"
-                      >지금은 밥 먹기 어렵지 않은 세상인데... 핸드폰을 몇 번만
-                      터치하면 집으로 밥이 배달 오고, 집 밖에도 먹을 수 있는 게
-                      너무나도 많은 세상입니다. 하지만 ‘요즘과 같은 세상’에도 한
-                      끼 식사를 해결하지 못해서 굶고 있는</span
-                    >
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (2).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="건강한식생활">
-                      <span class="hashtag">#</span>
-                      <span>건강한식생활</span>
-                    </button>
-                    <strong
-                      >급식지원사업의 사각지대, 기댈 곳 없는 이웃들</strong
-                    >
-                    <span class="list-subtxt">
-                      급식지원사업의 사각지대, 기댈 곳 없는 이웃들 현재
-                      서울시에서는 ‘저소득 어르신 급식지원사업’을 통하여 만 60세
-                      이상 어르신에게 도시락, 밑반찬을 지원하고 있습니다. 하지만
-                      주변을 돌아볼까요? 고시원에서 하
-                    </span>
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (3).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="MBC어린이">
-                      <span class="hashtag">#</span>
-                      <span>MBC어린이</span>
-                    </button>
-                    <strong>자유를 꿈꾸는 나은이</strong>
-                    <span class="list-subtxt">
-                      2살부터 시작된 나은이의 보조기 일상 미혼모 아동으로 태어난
-                      나은이는 영아원에서 지내다 어머니와 연락이 두절되고, 6년
-                      전 아동복지시설로 오게 되었습니다. 그날 이후 가족의 보호를
-                      받지 못한 아이들이 모여
-                    </span>
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (4).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="기본생활지원">
-                      <span class="hashtag">#</span>
-                      <span>기본생활지원</span>
-                    </button>
-                    <strong>나는 할아버지가 내 아빠고 내 엄마예요</strong>
-                    <span class="list-subtxt">
-                      나는 할아버지가 내 아빠고 내 엄마예요 부모의 사망, 사별,
-                      이혼, 가출 등 다양한 사유로 부모와 같이 살지 못하고 어렵게
-                      할머니, 할아버지와 같이 살고 있는 아이들이 주변에는 너무
-                      많습니다. 우리는 이 가정을 '조손가
-                    </span>
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (5).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="기본생활지원">
-                      <span class="hashtag">#</span>
-                      <span>기본생활지원</span>
-                    </button>
-                    <strong>물속에 있으면 엄마 품처럼 따뜻해요~</strong>
-                    <span class="list-subtxt">
-                      혼자가 무서워요. “형은 언제 집에 와요?”, “형 올 때까지
-                      기다렸다가 자면 안 돼요?” 경수는 취침 시간이 되었는데
-                      책상에 앉아 방을 함께 사용하는 형을 기다리고 있습니다.
-                      올해 10살인 경수는 방에 혼자 있는 것을
-                    </span>
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
-              <div class="main-lt-list">
-                <a
-                  class="main-lt-list-inner"
-                  href="https://together.kakao.com/fundraisings/113573/story"
-                >
-                  <img src="./images/c1400x960 (6).jpg" alt="카카오 같이가치" />
-                  <div class="list-content">
-                    <button type="button" name="멸종위기종">
-                      <span class="hashtag">#</span>
-                      <span>멸종위기종</span>
-                    </button>
-                    <strong
-                      >생명을 파헤치는 남산 곤돌라 개발에 함께 맞서요</strong
-                    >
-                    <span class="list-subtxt"
-                      >남산 도롱뇽의 고민, 들어보실래요? 안녕하세요? 저는 남산에
-                      살고 있는 도롱뇽이에요. 우리 집, 남산에 와본 적 있나요?
-                      실개천이 따뜻해질 무렵이 되면 사람들이 많이 오더라고요.
-                      이런 시기를 ‘봄’이라고 부르던가요?</span
-                    >
-                    <div class="progress-container">
-                      <div class="progress-bar">
-                        <div role="progressbar" class="current-bar"></div>
-                      </div>
-                      <div class="progress-info">
-                        <span class="txt-num">527,898원</span>
-                        <span class="txt-per">39%</span>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
+            <div class="main-lt-donation-list" id="ltlist">
+              <!-- 외부 데이터 연동 -->
             </div>
           </div>
 

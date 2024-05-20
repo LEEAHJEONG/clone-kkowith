@@ -700,8 +700,6 @@
     max-width: 100%;
   }
   .main-lt-list {
-    /* height: 92.44vw;
-    max-height: 710px; */
     padding: 26px 20px 30px;
   }
 
@@ -917,8 +915,76 @@
     line-height: 1.5;
   }
 
-  /* 6번 */
+  /* 반응형 5번 */
+  .lt-slide {
+    padding: 0;
+    height: 100% !important;
+  }
+
+  .lt-slide .main-lt-list-inner img {
+    width: 100%;
+    height: 335px;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .lt-slide .main-lt-list-inner {
+    width: 100%;
+  }
+
+  .lt-slide .list-content {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+  }
+
+  .lt-slide .list-content .list-subtxt {
+    display: none;
+  }
+
+  /* 반응형 6번 */
   .main-lt-donation-list .main-lt-list-inner {
     flex-direction: column;
+  }
+
+  .main-lt-list-inner img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .main-lt-list .list-content {
+    position: relative;
+    padding: 18px 20px 23px;
+    margin-top: 0;
+  }
+
+  .main-lt-list .list-content button {
+    position: absolute;
+    left: 20px;
+    top: -40px;
+    background-color: rgb(32, 32, 32);
+    cursor: pointer;
+    padding: 1px 8px 3px;
+    border-radius: 4px;
+    box-shadow: none;
+    min-width: 0px;
+  }
+
+  .list-content button span {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-style: normal;
+    font-family: "KakaoBig Regular";
+    overflow-wrap: break-word;
+    line-height: 1.67;
+    letter-spacing: -0.1px;
+  }
+
+  .list-content button span:first-child {
+    opacity: 0.7;
   }
 }
