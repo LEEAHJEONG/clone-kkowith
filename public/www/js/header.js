@@ -42,3 +42,32 @@ window.addEventListener("load", function () {
     link.addEventListener("click", handleNavClick);
   });
 });
+
+// 메뉴 펼침
+
+window.addEventListener("load", () => {
+  const loginIcon = document.querySelector(".icon-login a");
+  const headerOpen = document.querySelector(".header-open");
+  const headerOpenMenu = document.querySelector(".header-open-menu");
+
+  function toggleMenu() {
+    headerOpen.classList.toggle("open");
+  }
+
+  loginIcon.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleMenu();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!headerOpenMenu.contains(e.target) && !loginIcon.contains(e.target)) {
+      headerOpen.classList.remove("open");
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+      headerOpen.classList.remove("open");
+    }
+  });
+});
