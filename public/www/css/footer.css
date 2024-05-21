@@ -1,7 +1,6 @@
 .footer {
   height: 180px;
   padding: 40px 0px 45px;
-  width: 100%;
   position: relative;
   border-top: 1px solid rgb(238, 238, 238);
   box-sizing: border-box;
@@ -17,9 +16,73 @@
   height: 100%;
 }
 
+.footer .footer-logo {
+  width: 115px;
+  height: 18px;
+  display: block;
+  background: url(//t1.kakaocdn.net/together_image/svg/footer_logo_black.svg)
+    center center / contain no-repeat;
+  flex-shrink: 0;
+}
+
+.footer .footer-logo span {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0px, 0px, 0px, 0px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  color: transparent;
+}
+
+.footer .inner .footer-txt {
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-family: "KakaoBig Regular";
+  line-height: 1.57;
+  letter-spacing: -0.1px;
+  padding: 16px 0px 18px;
+}
+
+.footer-info {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0px;
+  border: 0px;
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
 .footer-sitemap {
   display: flex;
   align-items: center;
+}
+
+.footer-sitemap li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-sitemap li::after {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  content: "";
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  background-color: rgb(68, 68, 68);
+}
+
+.footer-sitemap li:last-child::after {
+  content: none;
+}
+
+.footer-sitemap li:last-child {
+  font-family: KakaoBig Bold;
 }
 
 .footer-sitemap span {
@@ -34,12 +97,64 @@
   cursor: pointer;
 }
 
-.footer-logo img {
-  width: 115px;
-  height: 18px;
+.footer-sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-sns li {
+  display: list-item;
+  position: relative;
+  font-size: 13px;
+  line-height: 1.54;
+  letter-spacing: -0.1px;
+}
+
+.footer-sns li a {
+  display: inline-block;
+  vertical-align: top;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-sns span {
+  box-sizing: border-box;
+  width: 30px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 0px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-sns span i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+
+.footer-sns .icon-kakao {
+  background: url(//t1.kakaocdn.net/together_image/svg/footer_kakaotalk_gray80.svg)
+    center center / contain no-repeat;
+}
+
+.footer-sns .icon-facebook {
+  background: url(//t1.kakaocdn.net/together_image/svg/footer_facebook_gray80.svg)
+    center center / contain no-repeat;
+}
+
+.footer-sns .icon-insta {
+  background: url(//t1.kakaocdn.net/together_image/svg/footer_instagram_gray80.svg)
+    center center / contain no-repeat;
+}
+
+.footer-sns span span {
   overflow: hidden;
   position: absolute;
   clip: rect(0px, 0px, 0px, 0px);
@@ -48,13 +163,4 @@
   height: 1px;
   margin: -1px;
   color: transparent;
-}
-
-.footer-sns .icon-kakao {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: top;
-  background: url(//t1.kakaocdn.net/together_image/svg/footer_kakaotalk_gray80.svg)
-    center center / contain no-repeat;
 }
