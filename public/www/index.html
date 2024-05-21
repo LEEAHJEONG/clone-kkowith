@@ -25,6 +25,7 @@
     <script src="./js/ltslide.js"></script>
     <script src="./js/ltlist.js"></script>
     <script src="./js/ltmost.js"></script>
+    <script src="./js/rtcard.js"></script>
   </head>
   <body>
     <!-- 전체 레이아웃 -->
@@ -76,14 +77,14 @@
       </header>
 
       <!-- header 메뉴 펼침 -->
-
+      <!-- <div class="header-open"></div> -->
       <div class="header-open">
         <div class="header-open-menu">
           <div class="header-open-inner">
             <div class="header-open-login">
               <a href="#">
                 <img src="./images/avatar.png" alt="오픈메뉴프로필" />
-                <h2>로그인하세요</h2></a
+                <span>로그인하세요</span></a
               >
             </div>
             <div class="header-open-profile">
@@ -506,43 +507,8 @@
               <div class="rt-card-title">
                 <a href="#">오늘 너의 마음날씨는 어때?</a>
               </div>
-              <ul class="rt-card-wrap">
-                <li>
-                  <a href="#" class="rt-card-list">
-                    <img src="./images/img (1).png" alt="카드이미지" />
-                    <div class="card-list-box">
-                      <h3>내가 가진 유머 세포는?</h3>
-                      <span>207,591명 참여</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="rt-card-list">
-                    <img src="./images/img (2).png" alt="카드이미지" />
-                    <div class="card-list-box">
-                      <h3>내가 가진 유머 세포는?</h3>
-                      <span>207,591명 참여</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="rt-card-list">
-                    <img src="./images/img (3).png" alt="카드이미지" />
-                    <div class="card-list-box">
-                      <h3>내가 가진 유머 세포는?</h3>
-                      <span>207,591명 참여</span>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="rt-card-list">
-                    <img src="./images/img (4).png" alt="카드이미지" />
-                    <div class="card-list-box">
-                      <h3>내가 가진 유머 세포는?</h3>
-                      <span>207,591명 참여</span>
-                    </div>
-                  </a>
-                </li>
+              <ul class="rt-card-wrap" id="card-list">
+                <!-- 외부데이터연동 -->
               </ul>
             </div>
 

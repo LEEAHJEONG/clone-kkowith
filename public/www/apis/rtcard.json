@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "imgpath": "./images/img (2).png",
+    "url": "#",
+    "title": "나의 자존감 점수는?",
+    "txt": "16,996명 참여"
+  },
+  {
+    "id": 1,
+    "imgpath": "./images/img.png",
+    "url": "#",
+    "title": "나의 소유욕 레벨은?",
+    "txt": "228,861명 참여"
+  },
+  {
+    "id": 1,
+    "imgpath": "./images/img (5).png",
+    "url": "#",
+    "title": "나의 행운지수는?",
+    "txt": "763,399명 참여"
+  },
+  {
+    "id": 1,
+    "imgpath": "./images/img (6).png",
+    "url": "#",
+    "title": "나는 끈기(GRIT)있는 사람일까?",
+    "txt": "81,931명 참여"
+  }
+]
