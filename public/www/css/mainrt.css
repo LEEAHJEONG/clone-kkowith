@@ -67,7 +67,7 @@
 }
 .main-rt-top-review {
   width: 100%;
-  /* height: 281px; */
+  height: 281px;
   background: #fff;
   border-radius: 0px 0px 12px 12px;
   padding: 31px 26px 46px;
@@ -86,14 +86,20 @@
   font-family: "KakaoBig Bold";
   line-height: 1.56;
 }
+.review-text-inner {
+}
 .review-text {
-  /* max-height: 108px; */
+  max-height: 150px;
   padding-top: 11px;
   color: #4a4a4a;
   font-size: 14px;
   line-height: 1.92;
   letter-spacing: -0.1px;
+  overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
 .main-rt-banner {
